@@ -55,14 +55,6 @@ public class Store {
 
 
 
-
-
-
-        Storage cklad = new Storage("Склад");
-
-
-
-
     }
 
 }
