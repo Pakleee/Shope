@@ -11,7 +11,7 @@ public class Employee {
         this.age = age;
     }
     public void choose (){
-        System.out.println("Клиент "+this.name + " выбирает товар");
+        System.out.println("Клиент "+this.name + " выбирает товары:");
     }
 
 

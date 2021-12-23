@@ -26,28 +26,33 @@ public class Store {
 
         Product s = new Product();
         s.setName("");
-        String setName = a1.nextLine();*/  //Код который пока не работает как должен.
+        String setName = a1.nextLine(); */ //Код который пока не работает как должен.
 
         Employee Ivan = new Employee("Иван","Иванов",25);
         Ivan.choose();
 
 
         Product a = new Product("Вода",156,12/12/2021,12345);
-        a.setState("В наличии");
+        a.setState("в наличии");
         a.getPrice();
         a.setDiscount(10);
-        a.chekPrice();
+        //a.chekPrice();
 
         Product b = new Product("Хлеб",25,21/12/2021,123);
-        b.setState("В наличии");
+        b.setState("в наличии");
         b.getPrice();
         b.setDiscount(0);
-        b.chekPrice();
+        //b.chekPrice();
 
         Product c = new Product("Мясо",257,21/12/2021,456);
         c.setState("Отсутствует");
         c.getPrice();
 
+
+
+
+
+        System.out.println("Общая ценна товара составила: "+ (a.setPrice()+ b.setPrice()));
         Order zakaz = new Order("Покупка","Оформляется",123);
         zakaz.setState();
 

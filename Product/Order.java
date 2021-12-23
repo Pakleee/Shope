@@ -1,4 +1,4 @@
-package Shope.Product;
+package Shope.Product ;
 
 public class Order {
     private String name;
@@ -13,6 +13,9 @@ public class Order {
 
     public void setState() {
         System.out.println("Товар, передан в оформление.");
-        this.state = state;
+
     }
+
+
+
 }

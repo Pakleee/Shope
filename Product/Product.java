@@ -10,17 +10,19 @@ public class Product {
     private int barCode; //324325
     private String state; // Статус
     private long Discount; // Акция
-    private float sum; //Сумма товара
 
 
-    public Product(String name, int price, double date, int barCode ) {
+
+    public Product(String name, int price, double date, int barCode) {
         this.name=name;
         this.price=price;
         this.date=date;
         this.barCode=barCode;
+
     }
 
     public String getName() {
+
         return name;
     }
 
@@ -32,24 +34,33 @@ public class Product {
 
     public void setState(String state) {
         this.state = state;
-        System.out.println("Товару "+name+" "+"присвоен статус "+state);
+        System.out.println("Товару "+name+ ":");
+        if (state != "в наличии"){
+            System.out.println("Присвоен статус "+state+":к сожалению данного товра нет в наличии");
+        } else {
+            System.out.println("Присвоен статус "+state);
+        }
+
 
     }
 
     public float getPrice() {
-        System.out.println("Цена товора состовляет "+this.price+" "+"рублей");
+        System.out.println("Цена на товор состовляет "+this.price+" "+"рублей");
         return price;
 
     }
 
     public void setDiscount(int discount) {
         Discount = discount;
-        System.out.println("На этот товар распространяется скидка "+discount+"%");
+        if (discount!=0)
+        System.out.println("На этот товар распространяется скидка "+discount+"% \nЦена на товар,с учетом скидки, составит "+ setPrice()+ " рублей");
+
     }
 
-    public void chekPrice (){
-        System.out.println("Цена на товар,с учетом скидки, составит "+(price=price-((price/100)*Discount))+" рублей");
+
+
+    public float setPrice() {
+        this.price = price;
+        return price-((price/100)*Discount);
     }
-
-
 }
