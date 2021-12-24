@@ -52,7 +52,7 @@ public class Store {
 
 
 
-        System.out.println("Общая ценна товара составила: "+ (a.setPrice()+ b.setPrice()));
+        System.out.println("Общая ценна, доступного товара, составила: "+ (a.setPrice()+ b.setPrice()));
         Order zakaz = new Order("Покупка","Оформляется",123);
         zakaz.setState();
 
