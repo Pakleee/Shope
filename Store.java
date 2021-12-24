@@ -32,6 +32,7 @@ public class Store {
         Ivan.choose();
 
 
+
         Product a = new Product("Вода",156,12/12/2021,12345);
         a.setState("В наличии");
         a.getPrice();
