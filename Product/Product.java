@@ -45,7 +45,7 @@ public class Product {
     }
 
     public float getPrice() {
-        System.out.println("Цена на товор состовляет "+this.price+" "+"рублей");
+        System.out.println("Цена на товор состовляет "+this.price+" "+"рублей.");
         return price;
 
     }
@@ -53,7 +53,7 @@ public class Product {
     public void setDiscount(int discount) {
         Discount = discount;
         if (discount!=0)
-        System.out.println("На этот товар распространяется скидка "+discount+"% \nЦена на товар,с учетом скидки, составит "+ setPrice()+ " рублей");
+        System.out.println("На этот товар распространяется скидка "+discount+"% \nЦена на товар,с учетом скидки, составит "+ setPrice()+ " рублей.");
 
     }
 
