@@ -35,10 +35,10 @@ public class Product {
     public void setState(String state) {
         this.state = state;
         System.out.println("Товару "+name+ ":");
-        if (state.equals("в наличии")){
+        if (state.equalsIgnoreCase("в наличии")){
             System.out.println("Присвоен статус "+state);
         } else {
-            System.out.println("Присвоен статус "+state+":к сожалению данного товра нет в наличии");
+            System.out.println("Присвоен статус "+state+":к сожалению данного товра нет в наличии.");
         }
 
 

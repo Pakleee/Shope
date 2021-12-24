@@ -33,13 +33,13 @@ public class Store {
 
 
         Product a = new Product("Вода",156,12/12/2021,12345);
-        a.setState("в наличии");
+        a.setState("В наличии");
         a.getPrice();
         a.setDiscount(10);
         //a.chekPrice();
 
         Product b = new Product("Хлеб",25,21/12/2021,123);
-        b.setState("в наличии");
+        b.setState("В наличии");
         b.getPrice();
         b.setDiscount(0);
         //b.chekPrice();
