@@ -11,15 +11,17 @@ public class Employee {
         this.age = age;
     }
     public void choose (){
-        System.out.println("Клиент "+this.name + " выбирает товары:Вода,Хлеб,Мясо и Вино");
+        System.out.println("Клиент "+this.name + " выбирает товары:");
     }
 
     public String getName() {
+        System.out.println(name);
         return name;
     }
 
     public int getAge() {
+        System.out.println(age);
         return age;
     }
-}
+   }
 

@@ -28,7 +28,8 @@ public class Store {
         s.setName("");
         String setName = a1.nextLine(); */ //Код который пока не работает как должен.
 
-        Employee Ivan = new Employee("Иван","Иванов",25);
+        Employee Ivan = new Employee("Иван","Иванов",10);
+        Employee Anna = new Employee("Анна","Иванова",44);
         Ivan.choose();
         Ivan.getAge();
 
@@ -52,23 +53,21 @@ public class Store {
 
         Product Vine = new Product("Вино",300,12/06/2021,555);
         Vine.setState("В наличии");
-        Vine.setPrice();
+        Vine.getPrice();
       while (Ivan.getAge()>=18){
           System.out.println("Продажа алкоголя, разрешена.");
           if (Ivan.getAge()<18){
                 System.out.println("Продажа запрещенна");
-            }break;
+            }{continue;}
         }
 
-
-
-
-
-
-        System.out.println("Общая ценна, доступного товара, составила: "+ (Water.setPrice()+ Bread.setPrice())+" рублей.");
-        Order zakaz = new Order("Покупка","Оформляется",123);
+        System.out.println("Общая ценна, доступного товара, составила: "+ (Water.setPrice()+ Bread.setPrice()+Vine.setPrice())+" рублей.");
+        Order zakaz = new Order("Покупка","Оформляется",123,1);
         zakaz.setState();
 
+        Anna.choose();
+        Bread.getName();
+        Water.getName();
 
 
 

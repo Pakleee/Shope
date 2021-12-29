@@ -22,7 +22,7 @@ public class Product {
     }
 
     public String getName() {
-
+        System.out.print(name+", ");
         return name;
     }
 
