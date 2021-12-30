@@ -28,7 +28,7 @@ public class Store {
         s.setName("");
         String setName = a1.nextLine(); */ //Код который пока не работает как должен.
 
-        Employee Ivan = new Employee("Иван","Иванов",10);
+        Employee Ivan = new Employee("Иван","Иванов",18);
         Employee Anna = new Employee("Анна","Иванова",44);
         Ivan.choose();
         Ivan.getAge();
@@ -58,7 +58,7 @@ public class Store {
           System.out.println("Продажа алкоголя, разрешена.");
           if (Ivan.getAge()<18){
                 System.out.println("Продажа запрещенна");
-            }{continue;}
+            }{break;}//Цикл не рабочий, если возраст покупателя поменять на 17лет или меньше. И помоему смысла тут в нем нет можо через If.
         }
 
         System.out.println("Общая ценна, доступного товара, составила: "+ (Water.setPrice()+ Bread.setPrice()+Vine.setPrice())+" рублей.");
@@ -68,9 +68,6 @@ public class Store {
         Anna.choose();
         Bread.getName();
         Water.getName();
-
-
-
 
     }
 
