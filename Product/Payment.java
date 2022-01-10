@@ -2,7 +2,7 @@ package Shope.Product;
 
 //Оплата
 public class Payment {
-    private String paymentType;
+    private String paymentType; //Способ оплаты
     private Order order;
     private float sum;
     private String state;

@@ -22,7 +22,7 @@ public class Product {
     }
 
     public String getName() {
-        System.out.print(name+", ");
+        System.out.print(name);
         return name;
     }
 
@@ -54,6 +54,7 @@ public class Product {
         Discount = discount;
         if (discount!=0)
         System.out.println("На этот товар распространяется скидка "+discount+"% \nЦена на товар,с учетом скидки, составит "+ setPrice()+ " рублей.");
+
 
     }
 

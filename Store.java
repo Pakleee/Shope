@@ -27,47 +27,52 @@ public class Store {
         Product s = new Product();
         s.setName("");
         String setName = a1.nextLine(); */ //Код который пока не работает как должен.
-
-        Employee Ivan = new Employee("Иван","Иванов",18);
-        Employee Anna = new Employee("Анна","Иванова",44);
+        Employee Ivan = new Employee("Иван", "Иванов", 18);
+        Employee Anna = new Employee("Анна", "Иванова", 75);
         Ivan.choose();
         Ivan.getAge();
 
 
-
-        Product Water = new Product("Вода",156,12/12/2021,12345);
+        Product Water = new Product("Вода", 156, 12 / 12 / 2021, 12345);
         Water.setState("В наличии");
         Water.getPrice();
         Water.setDiscount(10);
 
 
-        Product Bread = new Product("Хлеб",25,21/12/2021,123);
+        Product Bread = new Product("Хлеб", 25, 21 / 12 / 2021, 123);
         Bread.setState("В наличии");
         Bread.getPrice();
         Bread.setDiscount(0);
 
 
-        Product Meat = new Product("Мясо",257,21/12/2021,456);
+        Product Meat = new Product("Мясо", 257, 21 / 12 / 2021, 456);
         Meat.setState("Отсутствует");
         Meat.getPrice();
 
-        Product Vine = new Product("Вино",300,12/06/2021,555);
+        Product Vine = new Product("Вино", 300, 12 / 06 / 2021, 555);
         Vine.setState("В наличии");
         Vine.getPrice();
-      while (Ivan.getAge()>=18){
-          System.out.println("Продажа алкоголя, разрешена.");
-          if (Ivan.getAge()<18){
+        while (Ivan.getAge() >= 18) {
+            System.out.println("Продажа алкоголя, разрешена.");
+            if (Ivan.getAge() < 18) {
                 System.out.println("Продажа запрещенна");
-            }{break;}//Цикл не рабочий, если возраст покупателя поменять на 17лет или меньше. И помоему смысла тут в нем нет можо через If.
+            }
+            {
+                break;
+            }//Цикл не рабочий, если возраст покупателя поменять на 17лет или меньше. И помоему смысла тут в нем нет можо через If.
         }
 
-        System.out.println("Общая ценна, доступного товара, составила: "+ (Water.setPrice()+ Bread.setPrice()+Vine.setPrice())+" рублей.");
-        Order zakaz = new Order("Покупка","Оформляется",123,1);
+        System.out.println("Общая ценна, доступного товара, составила: " + (Water.setPrice() + Bread.setPrice() + Vine.setPrice()) + " рублей.");
+        Order zakaz = new Order("Покупка", "Оформляется", 123, 1);
         zakaz.setState();
+
 
         Anna.choose();
         Bread.getName();
+        System.out.print(", ");
         Water.getName();
+        System.out.println(".");
+
 
     }
 
