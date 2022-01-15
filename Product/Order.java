@@ -10,6 +10,7 @@ public class Order {
         this.name = name;
         this.state = state;
         this.idOrder = idOrder;
+        this.sumOrder= sumOrder;
     }
 
     public void setState() {
@@ -17,9 +18,10 @@ public class Order {
 
     }
     public void setSumOrder(){
-        for (int i=0;i<=5;i++)
+        for (int i=0;sumOrder<=0;i++)
             sumOrder=sumOrder+i;
-        System.out.println("Заказ № "+sumOrder+" передан в оформление");
+        System.out.println("Заказ № "+sumOrder+" передан в оформление.");
+
 
     }
 

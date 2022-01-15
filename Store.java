@@ -1,5 +1,4 @@
 package Shope;
-
 import Shope.Product.Order;
 import Shope.Product.Product;
 import Shope.Product.Storage;
@@ -7,10 +6,9 @@ import Shope.people.Buyer;
 import Shope.people.Employee;
 
 import java.util.Scanner;
-
 //Сам Магазин
 public class Store {
-
+    
     public static void main(String[] args) {
        /* Buyer client = new Buyer();
         client.Client();
@@ -27,7 +25,7 @@ public class Store {
         Product s = new Product();
         s.setName("");
         String setName = a1.nextLine(); */ //Код который пока не работает как должен.
-        Employee Ivan = new Employee("Иван", "Иванов", 18);
+        Employee Ivan = new Employee("Иван", "Иванов", 17);
         Employee Anna = new Employee("Анна", "Иванова", 75);
         Ivan.choose();
         Ivan.getAge();
@@ -52,27 +50,34 @@ public class Store {
         Product Vine = new Product("Вино", 300, 12 / 06 / 2021, 555);
         Vine.setState("В наличии");
         Vine.getPrice();
-        while (Ivan.getAge() >= 18) {
-            System.out.println("Продажа алкоголя, разрешена.");
-            if (Ivan.getAge() < 18) {
+        if (Ivan.getAge() >= 18) {
+            System.out.println("Продажа алкоголя, разрешена.");}
+             if  (Ivan.getAge() < 18){
                 System.out.println("Продажа запрещенна");
             }
-            {
-                break;
-            }//Цикл не рабочий, если возраст покупателя поменять на 17лет или меньше. И помоему смысла тут в нем нет можо через If.
-        }
+
+            //Цикл не рабочий, если возраст покупателя поменять на 17лет или меньше. И помоему смысла тут в нем нет можо через If.
+
+
 
         System.out.println("Общая ценна, доступного товара, составила: " + (Water.setPrice() + Bread.setPrice() + Vine.setPrice()) + " рублей.");
-        Order zakaz = new Order("Покупка", "Оформляется", 123, 1);
-        zakaz.setState();
+        Order zakaz1 = new Order("Покупка", "Оформляется", 123, 1);
+        zakaz1.setSumOrder();
 
 
         Anna.choose();
         Bread.getName();
-        System.out.print(", ");
-        Water.getName();
-        System.out.println(".");
+        Bread.setState("В наличии");
+        Bread.getPrice();
+        Bread.setDiscount(8);
 
+        Water.getName();
+        Water.setState("В наличии");
+        Water.getPrice();
+
+
+        Order zakaz2 = new Order("Покупка","Оформляется",124,2);
+        zakaz2.setSumOrder();
 
     }
 
