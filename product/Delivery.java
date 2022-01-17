@@ -1,4 +1,4 @@
-package Shope;
+package Shope.product;
 
 public class Delivery {
     private int id;

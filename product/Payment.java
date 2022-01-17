@@ -1,4 +1,4 @@
-package Shope.Product;
+package Shope.product;
 
 //Оплата
 public class Payment {

@@ -1,4 +1,4 @@
-package Shope.Product;
+package Shope.product;
 
 public class Storage {
     private String name;

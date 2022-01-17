@@ -1,9 +1,7 @@
 package Shope.people;
 
-import java.util.Scanner;
-
 //Покупатель
-public class Buyer extends Employee  {
+public class Buyer extends Client {
 
 
     public Buyer(String name, String surname, int age) {
