@@ -1,8 +1,10 @@
 package Shope.product;
 
 
+import Shope.people.Info;
+
 //Продукты
-public class Product {
+public class Product implements Info {
     private String name; // Название продукта
     private float price; // 123
     private double date; // Дата
@@ -38,7 +40,10 @@ public class Product {
     }
 
     public float getPrice() {
-        System.out.println("Цена на товор состовляет " + this.price + " " + "рублей.");
+        if (state.equalsIgnoreCase("в наличии"))
+            System.out.println("Цена на товор состовляет " + this.price + " " + "рублей.");
+        else {
+        }
         return price;
     }
 
@@ -52,4 +57,14 @@ public class Product {
         this.price = price;
         return price - ((price / 100) * Discount);
     }
+
+    @Override
+    public void infoChose() {
+        if (state.equalsIgnoreCase("в наличии"))
+        System.out.println("Товар "+name+" перемещен в корзину.");
+        else {
+            System.out.println("Выбрать данный товар не возможно, так как его статус "+state);
+        }
+    }
+
 }

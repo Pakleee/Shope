@@ -20,7 +20,7 @@ public class Order {
     public void setSumOrder(){
         for (int i=0;sumOrder<=0;i++)
             sumOrder=sumOrder+i;
-        System.out.println("Заказ № "+sumOrder+" передан в оформление.");
+        System.out.println("Заказ № "+sumOrder+" передан в оформление."); //?? правильный ли подсчет номеров
     }
     public static Order orderNmber2() {
         Order zakaz2 = new Order("Покупка","Оформляется",124,2);
@@ -28,9 +28,9 @@ public class Order {
         return zakaz2;
     }
 
-    public static Order sum(Product water, Product bread, Product Vine) {
-        System.out.println("Общая ценна, доступного товара, составила: " + (water.setPrice() + bread.setPrice() + Vine.setPrice()) + " рублей.");
-        return null;
+    public static Order sum(Product water, Product bread, Product Vine) {   //?? Как сделать автоматический подсчет выбранных товаров.
+        System.out.println("Общая ценна, товара в корзине, составила: " + (water.setPrice() + bread.setPrice() + Vine.setPrice()) + " рублей.");
+        return null; //?? почему возвращается в ноль
     }
 
 

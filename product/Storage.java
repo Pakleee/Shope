@@ -1,6 +1,6 @@
 package Shope.product;
 
-public class Storage {
+public abstract class Storage {
     private String name;
 
     public Storage(String name) {
