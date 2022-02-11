@@ -16,8 +16,18 @@ public class CollectionGenerator extends Bilder{
             p.chooseState();
         }
     }
+    public static void printState (ArrayList<Product> products) {
+        for (Product a : products) {
+            a.chooseState();
+            a.checkState();
+            a.printPrice();
+            a.printDiscount();
+        }
+
+    }
+
     public static void productSearch (ArrayList<Product> products) {
-        System.out.println(products.get(bildMeat().hashCode()%1000));
+        System.out.println(products.get(bildMeat().hashCode()));
     }
 }
 

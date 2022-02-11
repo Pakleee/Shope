@@ -54,14 +54,12 @@ public class Product implements Info {
         }
 
     }
-    public void setDiscount(int discount) {
-        this.discount = discount;
+    public void printDiscount() {
         if (discount != 0)
             System.out.println("На этот товар распространяется скидка " + discount + "% \nЦена на товар,с учетом скидки, составит " + setPrice() + " рублей.");
     }
 
     public float setPrice() {
-        this.price = price;
         return price - ((price / 100) * discount);
     }
 

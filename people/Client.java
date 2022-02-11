@@ -3,7 +3,7 @@ package Shope.people;
 public class Client extends Input implements Info {
     private String name;
     private String surname;
-    private int age;
+    private static int age;
 
     public Client(String name, String surname, int age) {
         this.name = name;
@@ -16,18 +16,18 @@ public class Client extends Input implements Info {
         return name;
     }
 
-    public int getAge() {
+    public static int getAge() {
         return age;
     }
-    public static void checkAge(Client Ivan) {
-        if (Ivan.getAge() >= 18) {
+    public static void checkAge() {
+        if (getAge() >= 18) {
             System.out.println("Продажа алкоголя, разрешена.");}
-        if  (Ivan.getAge() < 18){
+        if  (getAge() < 18){
             System.out.println("Продажа алкогольной продукции лицам не достигшим 18 лет запрещена");
         }
     }
     public static void choose(){
-        System.out.print( "Выбирайте  доступные товары товары:");
+        System.out.println( "Выбирайте  доступные товары товары:");
     }
 
     public static Client clientInfoAnna() {
@@ -37,9 +37,8 @@ public class Client extends Input implements Info {
     }
 
     public static Client clientInfoIvan() {
-        Client Ivan = new Client("Иван", "Иванов", 17);
+        Client Ivan = new Client("Иван", "Иванов", 19);
         Ivan.infoChose();
-        Ivan.getAge();
         return Ivan;
     }
 
