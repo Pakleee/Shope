@@ -1,6 +1,6 @@
 package Shope.people;
 //Клиент
-public class Client implements Info {
+public class Client extends Input implements Info {
     private String name;
     private String surname;
     private int age;
@@ -10,9 +10,6 @@ public class Client implements Info {
         this.surname = surname;
         this.age = age;
     }
-    public void choose (){
-        System.out.println("Клиент "+this.name + " выбирает товары:");
-    } // ?? Пропадает из-зареализации
 
     public String getName() {
         System.out.println(name);
@@ -29,6 +26,10 @@ public class Client implements Info {
             System.out.println("Продажа алкогольной продукции лицам не достигшим 18 лет запрещена");
         }
     }
+    public static void choose(){
+        System.out.print( "Выбирайте  доступные товары товары:");
+    }
+
     public static Client clientInfoAnna() {
         Client Anna = new Client("Анна", "Иванова", 75);
         Anna.infoChose();
@@ -48,6 +49,7 @@ public class Client implements Info {
     public void  infoChose() {
         System.out.println("Клиент "+this.surname+" "+this.name+" в возрасте "+this.age+"лет, "+"выбирает товары:");
     }
+
 }
 
 

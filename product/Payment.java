@@ -1,7 +1,7 @@
 package Shope.product;
 
 //Оплата
-public class Payment {
+public abstract class Payment {
     private String paymentType; //Способ оплаты
     private Order order;
     private float sum;

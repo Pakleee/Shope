@@ -8,6 +8,7 @@ public abstract class Storage {
     }
 
     public String getName() {
+
         return name;
     }
 }

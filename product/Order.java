@@ -1,6 +1,6 @@
 package Shope.product;
 
-public class Order {
+public class Order  {
     private String name;
     private String state;
     private int idOrder;
