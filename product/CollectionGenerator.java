@@ -14,7 +14,7 @@ public class CollectionGenerator extends Bilder{
     public static void printName(ArrayList<Product> products) {
         for (Product p : products) {
             p.chooseState();
-        }
+        }System.out.println();
     }
     public static void printState (ArrayList<Product> products) {
         for (Product a : products) {

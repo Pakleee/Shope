@@ -15,10 +15,7 @@ public class Store {
         Input.inputName();
         Client.choose();
         CollectionGenerator.printName(CollectionGenerator.сollection());
-        System.out.println();
         CollectionGenerator.printState(CollectionGenerator.сollection());
-
-
 
 //        Client Ivan = Client.clientInfoIvan();
 //        Product water = Bilder.bildWater();
@@ -34,6 +31,5 @@ public class Store {
 //        Order two = Order.orderNmber2();
 
     }
-
 }
 
