@@ -11,6 +11,14 @@ public class Client extends Input implements Info {
         this.age = age;
     }
 
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
     public String getName() {
         System.out.println(name);
         return name;
@@ -42,7 +50,13 @@ public class Client extends Input implements Info {
         return Ivan;
     }
 
-
+    @Override
+    public String toString() {
+        return "Client{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                '}';
+    }
 
     @Override
     public void  infoChose() {

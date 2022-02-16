@@ -6,13 +6,17 @@ import Shope.product.CollectionGenerator;
 import Shope.product.Order;
 import Shope.product.Product;
 
+import java.io.IOException;
+
 import static Shope.product.Order.sum;
 
 //Сам Магазин
 public class Store {
 
-    public static void main(String[] args) {
-        Input.inputName();
+    public static void main(String[] args) throws IOException {
+          Input.savePerson();
+          Input.writePerson();
+//        Input.inputName();
         Client.choose();
         CollectionGenerator.printName(CollectionGenerator.сollection());
         CollectionGenerator.printState(CollectionGenerator.сollection());
