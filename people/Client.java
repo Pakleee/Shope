@@ -3,7 +3,7 @@ package Shope.people;
 public class Client extends Input implements Info {
     private String name;
     private String surname;
-    private static int age;
+    private  int age;
 
     public Client(String name, String surname, int age) {
         this.name = name;
@@ -24,14 +24,15 @@ public class Client extends Input implements Info {
         return name;
     }
 
-    public static int getAge() {
+    public  int getAge() {
+
         return age;
     }
-    public static void checkAge() {
+    public  String checkAge() {
         if (getAge() >= 18) {
-            System.out.println("Продажа алкоголя, разрешена.");}
-        if  (getAge() < 18){
-            System.out.println("Продажа алкогольной продукции лицам не достигшим 18 лет запрещена");
+            return "Продажа алкоголя, разрешена.";
+        } else {
+          return  "Продажа алкогольной продукции лицам не достигшим 18 лет запрещена";
         }
     }
     public static void choose(){
@@ -53,8 +54,10 @@ public class Client extends Input implements Info {
     @Override
     public String toString() {
         return "Client{" +
-                "name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
+                "Имя='" + name + '\'' +
+                ", Фамилия='" + surname + '\'' +
+                ", Возраст=" + age +
+                ", Проверка возраста="+ checkAge()+
                 '}';
     }
 

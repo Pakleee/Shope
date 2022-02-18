@@ -4,6 +4,7 @@ import java.io.*;
 import java.util.Scanner;
 
 public class Input {
+    static String FILE_FORMAT = ".txt";
 
     static File CATALOG_NAME = new File("file/Клиенты/ ");
 
@@ -23,11 +24,12 @@ public class Input {
     public static void  savePerson () throws IOException {
         System.out.println("Добро пожаловать, введите ваши данные. Имя,Фамилия и Возраст");
         Scanner sc= new Scanner(System.in);
-        String person = sc.next();
-        try (DataOutputStream dos = new DataOutputStream(new FileOutputStream(CATALOG_NAME+person,true))){
-    dos.writeUTF("Имя: "+person);
-    dos.writeUTF("Фамилию: "+sc.next());
-    dos.writeUTF(("Возраст: "+sc.nextInt()+"\n"));
+        String person = sc.nextLine();
+        try (DataOutputStream dos = new DataOutputStream(new FileOutputStream(CATALOG_NAME+person+FILE_FORMAT,true))){
+    dos.writeUTF(person);
+    dos.writeUTF(sc.nextLine());
+    dos.writeInt((sc.nextInt()));
+    dos.writeUTF("\n");
         } catch (IOException e){
             System.out.println("Все пошло не туда");
             e.printStackTrace();
@@ -44,7 +46,7 @@ public class Input {
 
         if (choise == 1){
             String client = sc.next();
-            try (DataInputStream dis =new DataInputStream(new FileInputStream(CATALOG_NAME+client))){
+            try (DataInputStream dis =new DataInputStream(new FileInputStream(CATALOG_NAME+client+FILE_FORMAT))){
                 Client p = new Client(dis.readUTF(), dis.readUTF(), dis.readInt());
                 System.out.println(p);
 
