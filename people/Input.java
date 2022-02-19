@@ -31,8 +31,9 @@ public class Input {
     dos.writeInt((sc.nextInt()));
     dos.writeUTF("\n");
         } catch (IOException e){
-            System.out.println("Все пошло не туда");
             e.printStackTrace();
+            System.out.println("Произошла ошибка попробуйте еще раз");
+            savePerson();
         }
     }
 
