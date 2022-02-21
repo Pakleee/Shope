@@ -14,7 +14,7 @@ import static Shope.product.Order.sum;
 public class Store {
 
     public static void main(String[] args) throws IOException {
-          Input.savePerson();
+         Input.savePerson();
           Input.writePerson();
 //        Input.inputName();
         Client.choose();

@@ -46,7 +46,8 @@ public class Input {
         int choise = sc.nextInt();
 
         if (choise == 1){
-            String client = sc.next();
+            System.out.println("Введите ваше имя для провеки: ");
+            String client =sc.next();
             try (DataInputStream dis =new DataInputStream(new FileInputStream(CATALOG_NAME+client+FILE_FORMAT))){
                 Client p = new Client(dis.readUTF(), dis.readUTF(), dis.readInt());
                 System.out.println(p);
