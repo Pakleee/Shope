@@ -16,12 +16,12 @@ import static Shope.product.Order.sum;
 public class Store {
 
     public static void main(String[] args) throws IOException {
-//        Input.savePerson();
-//        Input.writePerson();
+        Input.savePerson();
+        Input.writePerson();
 //////        Input.inputName();
-//        Client.choose();
-//        CollectionGenerator.printName(CollectionGenerator.сollection());
-//        CollectionGenerator.printState(CollectionGenerator.сollection());
+        Client.choose();
+        CollectionGenerator.printName(CollectionGenerator.сollection());
+        CollectionGenerator.printState(CollectionGenerator.сollection());
         Factory.getDelivery();
 
 
