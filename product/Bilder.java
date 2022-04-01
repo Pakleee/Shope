@@ -2,9 +2,9 @@ package Shope.product;
 
 import Shope.people.Client;
 
-public class Bilder  {
+public class Bilder {
     public static Product bildMeat() {
-        Product meat = new Product("Мясо",257,21/12/2021,456,"отсутствует",0);
+        Product meat = new Product("Мясо", 257, 21 / 12 / 2021, 456, "отсутствует", 0);
 //        meat.checkState();
 //        meat.printPrice();
 //        meat.infoChose();
@@ -13,7 +13,7 @@ public class Bilder  {
     }
 
     public static Product bildBread() {
-        Product bread = new Product("Хлеб",25,21/12/2021,123,"в наличии",0);
+        Product bread = new Product("Хлеб", 25, 21 / 12 / 2021, 123, "в наличии", 0);
 //        bread.checkState();
 //        bread.printPrice();
 //        bread.setDiscount();
@@ -23,7 +23,7 @@ public class Bilder  {
     }
 
     public static Product bildWater() {
-        Product water = new Product("Вода",156,12/ 12/2021,12345,"в наличии",10);
+        Product water = new Product("Вода", 156, 12 / 12 / 2021, 12345, "в наличии", 10);
 //        water.checkState();
 //        water.printPrice();
 //        water.setDiscount();
@@ -31,8 +31,9 @@ public class Bilder  {
         water.hashCode();
         return water;
     }
+
     public static Product bildVine() {
-        Product vine = new Product("Вино",300,12/06/2021,555,"в наличии",0);
+        Product vine = new Product("Вино", 300, 12 / 06 / 2021, 555, "в наличии", 0);
 //        vine.checkState();
 //        vine.printPrice();
 //        Client.checkAge();
@@ -40,8 +41,6 @@ public class Bilder  {
         vine.hashCode();
         return vine; //?? Сгенерировалось так но в main работает с другим клиентом
     }
-
-
 
 
 }

@@ -60,6 +60,7 @@ public class Product implements Info {
     }
 
     public float setPrice() {
+
         return price - ((price / 100) * discount);
     }
 

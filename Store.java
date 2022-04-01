@@ -1,4 +1,6 @@
 package Shope;
+
+import Shope.factory.Factory;
 import Shope.people.Client;
 import Shope.people.Input;
 import Shope.product.Bilder;
@@ -14,12 +16,15 @@ import static Shope.product.Order.sum;
 public class Store {
 
     public static void main(String[] args) throws IOException {
-         Input.savePerson();
-          Input.writePerson();
-//        Input.inputName();
-        Client.choose();
-        CollectionGenerator.printName(CollectionGenerator.сollection());
-        CollectionGenerator.printState(CollectionGenerator.сollection());
+//        Input.savePerson();
+//        Input.writePerson();
+//////        Input.inputName();
+//        Client.choose();
+//        CollectionGenerator.printName(CollectionGenerator.сollection());
+//        CollectionGenerator.printState(CollectionGenerator.сollection());
+        Factory.getDelivery();
+
+
 
 //        Client Ivan = Client.clientInfoIvan();
 //        Product water = Bilder.bildWater();
